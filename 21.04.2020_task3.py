@@ -1,0 +1,6 @@
+text = input('Введите тескт:\n')
+up_list = list(filter(lambda x: x.isupper(), text))
+low_list = list(filter(lambda x: x.islower(), text))
+letters_quanity = len(up_list) + len(low_list)
+print(f'В верхнем регистре {len(up_list) / letters_quanity * 100:.2f}% букв.')
+print(f'В нижнем регистре {len(low_list) / letters_quanity * 100:.2f}% букв.')
